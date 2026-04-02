@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(0, 172, 0, 0.356);
+    background-color: (white);
 }
 
 header {
@@ -10,11 +10,8 @@ header {
     
 }
 
-.post {
-    border-radius: 20px;
-    background-color: green;
-    margin: 10px;
-    padding: 20px;
+main {
     display: flex;
-    
+    flex-direction: column;
+    gap: 20px;
 }
