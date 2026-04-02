@@ -1,0 +1,20 @@
+body{
+    background-color: rgba(0, 172, 0, 0.356);
+}
+
+header {
+    position: sticky;
+    background-color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    
+}
+
+.post {
+    border-radius: 20px;
+    background-color: green;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    
+}
