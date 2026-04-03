@@ -8,67 +8,68 @@
 </head>
 
 <body>
-    <header>
-        <h1>Adotar</h1>
-
-    </header>
+   
     <main>
+        <h1>Adote seu pet!</h1>
         <div>
             <label for="nome">Nome completo</label>
-            <input type="name" name="" id="">
+            <input type="name" name="nome" id="">
         </div>
         <div>
             <label for="email">E-mail</label>
-            <input type="email" name="" id="">
+            <input type="email" name="email" id="">
         </div>
 
         <div>
             <label for="telefone">Telefone</label>
-            <input type="text" name="" id="">
+            <input type="text" name="telefone" id="">
         </div>
         <div>
             <label for="cpf">CPF</label>
-            <input type="text" name="" id="">
+            <input type="text" name="cpf" id="">
         </div>
         <div>
             <label for="idade">Data de nascimento</label>
-            <input type="date" name="" id="">
+            <input type="date" name="nascimento" id="">
         </div>
-         <div>
+        <div>
             <label for="cidade">Cidade</label>
-            <input type="text" name="" id="">
+            <input type="text" name="cidade" id="">
         </div>
-         <div>
+        <div>
             <label for="moradia">Tipo de moradia (Casa ou Apartamento)</label>
-            <select name="escolhas" id="">
-            <option value="opção1">Casa</option>
-            <option value="opção2">Apartamento</option>
+            <select name="escolhas" id="moradia">
+                <option value="opção1"></option>
+                <option value="opção1">Casa</option>
+                <option value="opção2">Apartamento</option>
             </select>
         </div>
-         <div>
+        <div>
             <label for="quintal">Você tem quintal? (Sim ou Não)</label>
-            <select name="escolhas" id="">
-            <option value="opção1">Sim</option>
-            <option value="opção2">Não</option>
+            <select name="escolhas" id="quintal">
+                <option value="opção1"></option>
+                <option value="opção1">Sim</option>
+                <option value="opção2">Não</option>
             </select>
         </div>
-         <div>
+        <div>
             <label for="pet">Você já teve pet? (Sim ou Não)</label>
-            <select name="escolhas" id="">
-            <option value="opção1">Sim</option>
-            <option value="opção2">Não</option>
+            <select name="escolhas" id="tevepet">
+                <option value="opção1"></option>
+                <option value="opção1">Sim</option>
+                <option value="opção2">Não</option>
             </select>
         </div>
         <div>
             <label for="horas">Quantas horas o animal ficará sozinho por dia?</label>
-            <input type="datetime">
+            <input type="datetime" id="horas">
         </div>
         <div>
             <label for="motivo">Motivo da adoção</label>
-            <input type="text">
+            <textarea name="motivo" id="" rows="3" cols="40"></textarea>
         </div>
         <div>
-              <label for="horas">Aceite os termos de responsabilidade</label>
+            <label for="horas">Aceite os termos de responsabilidade</label>
             <input type="checkbox">
         </div>
 
