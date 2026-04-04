@@ -4,54 +4,65 @@ function formulario() {
     let email = document.getElementById("email").value;
     let telefone = document.getElementById("telefone").value;
     let cpf = document.getElementById("cpf").value;
+    let cpf_duplicado = [
+        "12345678910",
+        "10987654321",
+        "12345109876",
+        "10987612345"
+    ]
     let idade = document.getElementById("idade").value;
     let cidade = document.getElementById("cidade").value;
     let moradia = document.getElementById("moradia").value;
     let quintal = document.getElementById("quintal").value;
-        let tevepet = document.getElementById("tevepet").value;
-            let horas = document.getElementById("horas").value;
+    let tevepet = document.getElementById("tevepet").value;
+    let horas = document.getElementById("horas").value;
     let motivo = document.getElementById("motivo").value;
         let termo = document.getElementById("termo").value;
 
         let erro = "";
 
+if (nome.length === 0) {
+    alert("Informe seu nome");
+    valido = false;
+} else if (nome.length < 3){
+    alert("Seu nome deve ter no mínimo 3 caracteres.");
+    valido = false;
+}
 
-        if(nome.length < 3) mensagem = mensagem + "- Mínimo 3 caracteres\n";
-        if(email.index0f("@") === -1) mensagem = mensagem + "Deve conter @\n";
-
-        let telefoneNumero = "";
-        for(let i = 0; i < telefone.length; i++) {
-            if (telefone[i]>= "0" && telefone[i] <= "9") {
-                telefoneNumero = telefoneNumero + telefone[i];
-            }
-        }
-        if (telefoneNumero.length < 8) {
-            erro = erro + "Telefone precisa ter no mínimo 8 numeros\n";
-        }
-
-        let (cpfLimpo === "") {
-            erro = erro + "CPF é obrigatório\n";
-
-        } 
-        
-        let CPFjaexiste = false;
-        for (let i = 0; i < cpfcadastrado.length; i++) {
-            if(cpfLimpo === cpfcadastrado[i]){
-                CPFjaexiste = true;
-            }
-        }
-        if (CPFjaexiste) {
-            erro = erro + "Este CPF já está cadastrado\n";
-        }
+if (email.length === 0) {
+    alert("Informe seu email");
+    valido = false;
+} else if (!email.includes("@")){
+    alert("Seu email deve ter @.");
+    valido = false;
+}
 
 
+    if (telefone.length === 0) {
+    alert("Informe seu telefone");
+    valido = false;
+} else if (telefone.length < 8){
+    alert("Seu telefone deve ter no mínimo 8 dígitos.");
+    valido = false;
+}
+if (cpf.length === 0) {
+    alert("Campo CPF obrigatório");
+    valido = false;
+} else if (cpf_duplicado.includes(cpf)) {
+    alert("Esse CPF já está cadastrado.");
+    valido = false;
+}
+if (idade.length === 0) {
+    alert("Informe sua idade");
+    valido = false;
+} else if (idade.length < 18){
+    alert("Você deve ser maior de idade para adotar.");
+    valido = false;
+}
 
-
-
-
-
-
-
-
+if (cidade.length === 0) {
+    alert("Campo cidade obrigatório");
+    valido = false;
+}
 
 }
