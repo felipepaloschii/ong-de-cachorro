@@ -65,4 +65,27 @@ if (cidade.length === 0) {
     valido = false;
 }
 
+if (!moradia) {
+    alert("Selecione seu tipo de moradia");
+    valido = false;
+} else if (moradia && moradia.value === "casa" && quintal && quintal.value === "não"){
+    alert("Aviso, o uso do espaço externo pode ser limitado.");
+    valido = false;
+    } else if (moradia && moradia.value === "apartamento" && quintal && quintal.value === "sim"){
+    alert("ERRO: Quem mora em apartamento não pode ter quintal.");
+}
+
+if (!quintal) {
+    alert ("Selecione se tem quintal");
+    valido = false
+}
+if (!tevepet) {
+    alert("Selecione se já teve pets");
+    valido = false;
+} else if (tevepet && tevepet.value === "não"){
+    alert("Aviso, já que você nunca teve um pet, pode haver acompanhamento da ONG.");
+}
+
+
+
 }
