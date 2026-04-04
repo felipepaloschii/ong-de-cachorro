@@ -86,6 +86,24 @@ if (!tevepet) {
     alert("Aviso, já que você nunca teve um pet, pode haver acompanhamento da ONG.");
 }
 
+if (horas.length === 0) {
+    alert("Informe quantas horas sozinho o pet ficará");
+    valido = false;
+} else if (isNaN(horas)) {
+    alert("As horas devem ser informadas com números.");
+    valido = false;
+    let porque = prompt("AVISO: Não é recomendado deixar seu pet tanto tempo sozinho, justifique o porque do tempo");
+
+    
+    if (!porque || porque.length === 0){
+        alert("Justifique para realizar o cadastro");
+        valido = false
+    }
+}
+
+
+
+
 
 
 }
