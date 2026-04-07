@@ -34,22 +34,25 @@ h1 {
 }
 
 input {
-    border: solid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
 }
 
 select {
-    border: solid;
     border-radius: 5px;
 }
 
 button {
     border-radius: 5px;
-    border: solid;
+    
 
 }
 
 form {
     align-items: center;
     text-align: center;
+}
+
+label {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
