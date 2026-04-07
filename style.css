@@ -35,17 +35,22 @@ h1{
 
 input {
     border: solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 select {
     border: solid;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 button {
-    border-radius: 10px;
+    border-radius: 5px;
     border: solid;
 
+}
+
+form {
+    align-items: center;
+    text-align: center;
 }
 
