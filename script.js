@@ -68,10 +68,10 @@ function formulario() {
     if (!moradia) {
         alert("Selecione seu tipo de moradia");
         valido = false;
-    } else if (moradia === "casa" && quintal === "nao"){
+    } else if (moradia === "casa" && quintal === "nao") {
         alert("Aviso, o uso do espaço externo pode ser limitado.");
         valido = false;
-    } else if (moradia === "apartamento" && quintal === "sim"){
+    } else if (moradia === "apartamento" && quintal === "sim") {
         alert("ERRO: Quem mora em apartamento não pode ter quintal.");
     }
 
@@ -120,7 +120,7 @@ function formulario() {
     if (!valido) {
     } else if (moradia === "apartamento") {
         let resp1 = prompt("O apartamento permite animais?");
-    } else if (moradia  === "casa" && quintal === "sim"){
+    } else if (moradia === "casa" && quintal === "sim") {
         let resp2 = prompt("O quintal é seguro?");
     }
 

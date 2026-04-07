@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(assets/quadro-com-vetor-de-caes-em-fundo-branco_53876-127700.avif);
     display: flex;
     background-size: cover;
@@ -12,11 +12,11 @@ header {
     background-color: green;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 5px;
-    
+
 }
 
 main {
-    
+
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -25,7 +25,7 @@ main {
     padding: 20px;
 }
 
-h1{
+h1 {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -53,4 +53,3 @@ form {
     align-items: center;
     text-align: center;
 }
-
