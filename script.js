@@ -13,8 +13,8 @@ function formulario() {
     let idade = document.getElementById("idade").value;
     let cidade = document.getElementById("cidade").value;
     let moradia = document.getElementById("moradia").value;
-    let quintal = document.getElementById("quintal").value;
-    let tevepet = document.getElementById("tevepet").value;
+    let quintal = document.querySelector("quintal").value;
+    let tevepet = document.getElementById("input").value;
     let horas = document.getElementById("horas").value;
     let motivo = document.getElementById("motivo").value;
     let termo = document.getElementById("termo");
