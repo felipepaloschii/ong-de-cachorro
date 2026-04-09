@@ -56,3 +56,15 @@ form {
 label {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.resultado {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: none;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgb(253, 213, 154);
+    border-radius: 20px;
+    padding: 20px;
+}
+
